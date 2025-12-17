@@ -1,4 +1,5 @@
 package com.example.project.entity;
+import jakarta.persistence.*;
 
 public class Student{
     private int id;
@@ -13,8 +14,17 @@ public int getid(){
 public void setId(int id){
     this.id=id;
 }
-public void getName(String name){
+public String getName(){
     return name;
 
 }
-public Str
+public void setName(String name){
+this.name=name;
+}
+public String getEmail(){
+return email;
+}
+public void setEmail(String email){
+    this.email=email;
+}
+public student(int id,String name,String )
