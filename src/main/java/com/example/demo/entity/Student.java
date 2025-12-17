@@ -1,8 +1,10 @@
 package com.example.project.entity;
 import jakarta.persistence.*;
-
+@entity
 public class Student{
-    private int id;
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Integer id;
     private String name;
     private String email;
 
@@ -27,4 +29,8 @@ return email;
 public void setEmail(String email){
     this.email=email;
 }
-public student(int id,String name,String )
+public student(Integer id,String name,String email){
+    this id.id=id;
+    this.name=name;
+    this.email=email;
+}
